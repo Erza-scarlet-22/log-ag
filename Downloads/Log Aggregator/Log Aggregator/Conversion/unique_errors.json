@@ -1,0 +1,681 @@
+[
+  {
+    "Status Code": "400",
+    "Error Code": "2005",
+    "Description": "Invalid JSON in request body",
+    "API": "GET /api/test-error/5",
+    "Count": 16,
+    "Last Seen": "2026-03-30T16:01:16",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "400",
+    "Error Code": "3001",
+    "Description": "Request body is empty",
+    "API": "POST /api/validate",
+    "Count": 33,
+    "Last Seen": "2026-03-31T11:23:36",
+    "Dates": [
+      "2026-03-06",
+      "2026-03-07",
+      "2026-03-08",
+      "2026-03-09",
+      "2026-03-12",
+      "2026-03-14",
+      "2026-03-21",
+      "2026-03-24",
+      "2026-03-27",
+      "2026-03-30",
+      "2026-03-31"
+    ]
+  },
+  {
+    "Status Code": "400",
+    "Error Code": "3002",
+    "Description": "Missing required fields: age",
+    "API": "POST /api/validate",
+    "Count": 21,
+    "Last Seen": "2026-03-30T16:01:17",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "400",
+    "Error Code": "3002",
+    "Description": "Missing required fields: email, age",
+    "API": "POST /api/validate",
+    "Count": 10,
+    "Last Seen": "2026-03-30T16:02:42",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "400",
+    "Error Code": "3002",
+    "Description": "Missing required fields: name, email",
+    "API": "POST /api/validate",
+    "Count": 16,
+    "Last Seen": "2026-03-31T06:24:54",
+    "Dates": [
+      "2026-03-02",
+      "2026-03-04",
+      "2026-03-06",
+      "2026-03-07",
+      "2026-03-08",
+      "2026-03-10",
+      "2026-03-12",
+      "2026-03-15",
+      "2026-03-17",
+      "2026-03-18",
+      "2026-03-23",
+      "2026-03-26",
+      "2026-03-27",
+      "2026-03-30",
+      "2026-03-31"
+    ]
+  },
+  {
+    "Status Code": "400",
+    "Error Code": "3003",
+    "Description": "Invalid email format",
+    "API": "POST /api/validate",
+    "Count": 22,
+    "Last Seen": "2026-03-31T05:15:01",
+    "Dates": [
+      "2026-03-01",
+      "2026-03-03",
+      "2026-03-07",
+      "2026-03-08",
+      "2026-03-09",
+      "2026-03-10",
+      "2026-03-13",
+      "2026-03-15",
+      "2026-03-18",
+      "2026-03-19",
+      "2026-03-21",
+      "2026-03-23",
+      "2026-03-27",
+      "2026-03-28",
+      "2026-03-29",
+      "2026-03-31"
+    ]
+  },
+  {
+    "Status Code": "400",
+    "Error Code": "3003",
+    "Description": "Invalid email format: invalid",
+    "API": "POST /api/validate",
+    "Count": 10,
+    "Last Seen": "2026-03-30T16:02:42",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "400",
+    "Error Code": "3003",
+    "Description": "Invalid email format: invalid-email",
+    "API": "POST /api/validate",
+    "Count": 16,
+    "Last Seen": "2026-03-30T16:01:17",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "400",
+    "Error Code": "3004",
+    "Description": "Age out of valid range: -5",
+    "API": "POST /api/validate",
+    "Count": 10,
+    "Last Seen": "2026-03-30T16:02:42",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "400",
+    "Error Code": "3004",
+    "Description": "Age out of valid range: 200",
+    "API": "POST /api/validate",
+    "Count": 11,
+    "Last Seen": "2026-03-30T16:01:17",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "400",
+    "Error Code": "3005",
+    "Description": "Age is not a valid integer",
+    "API": "POST /api/validate",
+    "Count": 8,
+    "Last Seen": "2026-03-31T13:29:07",
+    "Dates": [
+      "2026-03-03",
+      "2026-03-05",
+      "2026-03-06",
+      "2026-03-11",
+      "2026-03-14",
+      "2026-03-20",
+      "2026-03-30",
+      "2026-03-31"
+    ]
+  },
+  {
+    "Status Code": "400",
+    "Error Code": "3005",
+    "Description": "Age is not a valid integer: not-a-number",
+    "API": "POST /api/validate",
+    "Count": 11,
+    "Last Seen": "2026-03-30T16:01:17",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "401",
+    "Error Code": "2002",
+    "Description": "Authentication failed - Invalid credentials",
+    "API": "GET /api/test-error/2",
+    "Count": 16,
+    "Last Seen": "2026-03-30T16:01:16",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "401",
+    "Error Code": "6001",
+    "Description": "Authentication failed \u2014 invalid credentials provided",
+    "API": "POST /api/auth/token",
+    "Count": 44,
+    "Last Seen": "2026-03-31T17:45:46",
+    "Dates": [
+      "2026-03-01",
+      "2026-03-02",
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-05",
+      "2026-03-08",
+      "2026-03-09",
+      "2026-03-10",
+      "2026-03-11",
+      "2026-03-13",
+      "2026-03-14",
+      "2026-03-15",
+      "2026-03-17",
+      "2026-03-18",
+      "2026-03-19",
+      "2026-03-21",
+      "2026-03-23",
+      "2026-03-24",
+      "2026-03-25",
+      "2026-03-26",
+      "2026-03-27",
+      "2026-03-28",
+      "2026-03-29",
+      "2026-03-30",
+      "2026-03-31"
+    ]
+  },
+  {
+    "Status Code": "401",
+    "Error Code": "6002",
+    "Description": "JWT refresh token has expired",
+    "API": "POST /api/auth/refresh",
+    "Count": 36,
+    "Last Seen": "2026-03-31T00:01:17",
+    "Dates": [
+      "2026-03-03",
+      "2026-03-07",
+      "2026-03-08",
+      "2026-03-09",
+      "2026-03-10",
+      "2026-03-11",
+      "2026-03-12",
+      "2026-03-13",
+      "2026-03-14",
+      "2026-03-15",
+      "2026-03-16",
+      "2026-03-19",
+      "2026-03-21",
+      "2026-03-22",
+      "2026-03-27",
+      "2026-03-29",
+      "2026-03-30",
+      "2026-03-31"
+    ]
+  },
+  {
+    "Status Code": "401",
+    "Error Code": "6003",
+    "Description": "MFA verification required but not provided",
+    "API": "POST /api/auth/token",
+    "Count": 18,
+    "Last Seen": "2026-03-29T13:59:47",
+    "Dates": [
+      "2026-03-08",
+      "2026-03-09",
+      "2026-03-10",
+      "2026-03-11",
+      "2026-03-13",
+      "2026-03-14",
+      "2026-03-17",
+      "2026-03-18",
+      "2026-03-19",
+      "2026-03-21",
+      "2026-03-24",
+      "2026-03-25",
+      "2026-03-26",
+      "2026-03-27",
+      "2026-03-28",
+      "2026-03-29"
+    ]
+  },
+  {
+    "Status Code": "402",
+    "Error Code": "5002",
+    "Description": "Card declined by issuer \u2014 insufficient funds",
+    "API": "POST /api/payments/charge",
+    "Count": 30,
+    "Last Seen": "2026-03-30T04:10:42",
+    "Dates": [
+      "2026-03-02",
+      "2026-03-04",
+      "2026-03-06",
+      "2026-03-07",
+      "2026-03-08",
+      "2026-03-09",
+      "2026-03-11",
+      "2026-03-12",
+      "2026-03-13",
+      "2026-03-15",
+      "2026-03-16",
+      "2026-03-17",
+      "2026-03-18",
+      "2026-03-19",
+      "2026-03-23",
+      "2026-03-26",
+      "2026-03-27",
+      "2026-03-28",
+      "2026-03-29",
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "403",
+    "Error Code": "2003",
+    "Description": "Permission denied - Insufficient privileges",
+    "API": "GET /api/test-error/3",
+    "Count": 11,
+    "Last Seen": "2026-03-30T16:01:16",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "404",
+    "Error Code": "4004",
+    "Description": "Endpoint not found: GET /api/nonexistent-endpoint",
+    "API": "GET /api/nonexistent-endpoint",
+    "Count": 10,
+    "Last Seen": "2026-03-30T16:02:42",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "404",
+    "Error Code": "4004",
+    "Description": "Endpoint not found: GET /favicon.ico",
+    "API": "GET /favicon.ico",
+    "Count": 2,
+    "Last Seen": "2026-03-31T11:08:08",
+    "Dates": [
+      "2026-03-30",
+      "2026-03-31"
+    ]
+  },
+  {
+    "Status Code": "404",
+    "Error Code": "7002",
+    "Description": "Order not found or belongs to a different account",
+    "API": "GET /api/orders/{id}",
+    "Count": 38,
+    "Last Seen": "2026-03-31T07:35:59",
+    "Dates": [
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-05",
+      "2026-03-06",
+      "2026-03-07",
+      "2026-03-08",
+      "2026-03-09",
+      "2026-03-10",
+      "2026-03-11",
+      "2026-03-13",
+      "2026-03-16",
+      "2026-03-17",
+      "2026-03-19",
+      "2026-03-20",
+      "2026-03-21",
+      "2026-03-22",
+      "2026-03-24",
+      "2026-03-27",
+      "2026-03-29",
+      "2026-03-30",
+      "2026-03-31"
+    ]
+  },
+  {
+    "Status Code": "408",
+    "Error Code": "2004",
+    "Description": "Request timeout - Operation exceeded 30 seconds",
+    "API": "GET /api/test-error/4",
+    "Count": 11,
+    "Last Seen": "2026-03-30T16:01:16",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "409",
+    "Error Code": "7001",
+    "Description": "Requested quantity exceeds available stock level",
+    "API": "POST /api/orders",
+    "Count": 26,
+    "Last Seen": "2026-03-29T10:01:47",
+    "Dates": [
+      "2026-03-02",
+      "2026-03-05",
+      "2026-03-07",
+      "2026-03-08",
+      "2026-03-11",
+      "2026-03-12",
+      "2026-03-13",
+      "2026-03-14",
+      "2026-03-16",
+      "2026-03-18",
+      "2026-03-19",
+      "2026-03-21",
+      "2026-03-23",
+      "2026-03-28",
+      "2026-03-29"
+    ]
+  },
+  {
+    "Status Code": "409",
+    "Error Code": "7003",
+    "Description": "Cannot cancel order \u2014 shipment already dispatched",
+    "API": "DELETE /api/orders/{id}",
+    "Count": 14,
+    "Last Seen": "2026-03-31T09:35:18",
+    "Dates": [
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-08",
+      "2026-03-10",
+      "2026-03-11",
+      "2026-03-13",
+      "2026-03-19",
+      "2026-03-22",
+      "2026-03-30",
+      "2026-03-31"
+    ]
+  },
+  {
+    "Status Code": "409",
+    "Error Code": "8001",
+    "Description": "Registration failed \u2014 email address already registered",
+    "API": "POST /api/users/register",
+    "Count": 28,
+    "Last Seen": "2026-03-31T18:06:09",
+    "Dates": [
+      "2026-03-02",
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-07",
+      "2026-03-08",
+      "2026-03-11",
+      "2026-03-15",
+      "2026-03-16",
+      "2026-03-17",
+      "2026-03-18",
+      "2026-03-19",
+      "2026-03-21",
+      "2026-03-22",
+      "2026-03-23",
+      "2026-03-24",
+      "2026-03-27",
+      "2026-03-28",
+      "2026-03-30",
+      "2026-03-31"
+    ]
+  },
+  {
+    "Status Code": "422",
+    "Error Code": "5003",
+    "Description": "Refund window expired \u2014 transaction is older than 90 days",
+    "API": "POST /api/payments/refund",
+    "Count": 12,
+    "Last Seen": "2026-03-30T15:50:43",
+    "Dates": [
+      "2026-03-06",
+      "2026-03-09",
+      "2026-03-11",
+      "2026-03-12",
+      "2026-03-14",
+      "2026-03-16",
+      "2026-03-18",
+      "2026-03-25",
+      "2026-03-28",
+      "2026-03-29",
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "422",
+    "Error Code": "8002",
+    "Description": "Phone number format is invalid for the specified region",
+    "API": "PUT /api/users/profile",
+    "Count": 16,
+    "Last Seen": "2026-03-27T04:28:30",
+    "Dates": [
+      "2026-03-02",
+      "2026-03-06",
+      "2026-03-07",
+      "2026-03-08",
+      "2026-03-09",
+      "2026-03-10",
+      "2026-03-16",
+      "2026-03-18",
+      "2026-03-20",
+      "2026-03-21",
+      "2026-03-27"
+    ]
+  },
+  {
+    "Status Code": "429",
+    "Error Code": "2006",
+    "Description": "Rate limit exceeded - Too many requests",
+    "API": "GET /api/test-error/6",
+    "Count": 21,
+    "Last Seen": "2026-03-30T16:01:17",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "429",
+    "Error Code": "6004",
+    "Description": "Account temporarily locked after 5 consecutive failed login attempts",
+    "API": "POST /api/auth/login",
+    "Count": 22,
+    "Last Seen": "2026-03-27T07:35:26",
+    "Dates": [
+      "2026-03-02",
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-05",
+      "2026-03-06",
+      "2026-03-07",
+      "2026-03-10",
+      "2026-03-13",
+      "2026-03-14",
+      "2026-03-18",
+      "2026-03-19",
+      "2026-03-21",
+      "2026-03-26",
+      "2026-03-27"
+    ]
+  },
+  {
+    "Status Code": "502",
+    "Error Code": "9004",
+    "Description": "Received malformed response from downstream fulfillment provider",
+    "API": "POST /api/fulfillment/dispatch",
+    "Count": 10,
+    "Last Seen": "2026-03-29T20:47:15",
+    "Dates": [
+      "2026-03-02",
+      "2026-03-10",
+      "2026-03-12",
+      "2026-03-17",
+      "2026-03-22",
+      "2026-03-25",
+      "2026-03-29"
+    ]
+  },
+  {
+    "Status Code": "503",
+    "Error Code": "2001",
+    "Description": "Database connection failed",
+    "API": "GET /api/test-error/1",
+    "Count": 21,
+    "Last Seen": "2026-03-30T16:01:16",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "503",
+    "Error Code": "2007",
+    "Description": "Service unavailable - Maintenance in progress",
+    "API": "GET /api/test-error/7",
+    "Count": 11,
+    "Last Seen": "2026-03-30T16:01:17",
+    "Dates": [
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "503",
+    "Error Code": "5001",
+    "Description": "Payment gateway did not respond within SLA threshold",
+    "API": "POST /api/payments/charge",
+    "Count": 16,
+    "Last Seen": "2026-03-31T11:26:04",
+    "Dates": [
+      "2026-03-01",
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-05",
+      "2026-03-09",
+      "2026-03-11",
+      "2026-03-12",
+      "2026-03-13",
+      "2026-03-14",
+      "2026-03-15",
+      "2026-03-18",
+      "2026-03-26",
+      "2026-03-29",
+      "2026-03-31"
+    ]
+  },
+  {
+    "Status Code": "503",
+    "Error Code": "9001",
+    "Description": "Email delivery service is unreachable \u2014 circuit breaker open",
+    "API": "POST /api/notifications/email",
+    "Count": 20,
+    "Last Seen": "2026-03-30T22:52:15",
+    "Dates": [
+      "2026-03-01",
+      "2026-03-03",
+      "2026-03-07",
+      "2026-03-09",
+      "2026-03-11",
+      "2026-03-12",
+      "2026-03-13",
+      "2026-03-16",
+      "2026-03-19",
+      "2026-03-20",
+      "2026-03-21",
+      "2026-03-23",
+      "2026-03-24",
+      "2026-03-25",
+      "2026-03-28",
+      "2026-03-30"
+    ]
+  },
+  {
+    "Status Code": "503",
+    "Error Code": "9003",
+    "Description": "Inventory microservice is unreachable \u2014 health check failed",
+    "API": "POST /api/inventory/sync",
+    "Count": 18,
+    "Last Seen": "2026-03-31T14:43:01",
+    "Dates": [
+      "2026-03-01",
+      "2026-03-03",
+      "2026-03-06",
+      "2026-03-07",
+      "2026-03-09",
+      "2026-03-12",
+      "2026-03-13",
+      "2026-03-17",
+      "2026-03-18",
+      "2026-03-24",
+      "2026-03-25",
+      "2026-03-27",
+      "2026-03-28",
+      "2026-03-29",
+      "2026-03-30",
+      "2026-03-31"
+    ]
+  },
+  {
+    "Status Code": "504",
+    "Error Code": "9002",
+    "Description": "Upstream recommendation engine timed out after 3000ms",
+    "API": "GET /api/recommendations",
+    "Count": 24,
+    "Last Seen": "2026-03-31T16:28:16",
+    "Dates": [
+      "2026-03-01",
+      "2026-03-02",
+      "2026-03-03",
+      "2026-03-08",
+      "2026-03-09",
+      "2026-03-10",
+      "2026-03-11",
+      "2026-03-12",
+      "2026-03-13",
+      "2026-03-15",
+      "2026-03-20",
+      "2026-03-21",
+      "2026-03-22",
+      "2026-03-24",
+      "2026-03-25",
+      "2026-03-26",
+      "2026-03-28",
+      "2026-03-29",
+      "2026-03-31"
+    ]
+  }
+]

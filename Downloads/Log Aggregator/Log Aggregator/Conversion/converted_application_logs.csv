@@ -1,0 +1,1777 @@
+Timestamp,Date,Status code,Error Code,Description,API
+2026-03-30T15:36:05,2026-03-30,200,,Success,GET /
+2026-03-30T15:39:12,2026-03-30,200,,Success,POST /api/validate
+2026-03-30T15:39:25,2026-03-30,200,,Success,POST /api/validate
+2026-03-30T15:39:31,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T15:39:37,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T15:39:43,2026-03-30,400,3004,Age out of valid range: 200,POST /api/validate
+2026-03-30T15:39:47,2026-03-30,400,3005,Age is not a valid integer: not-a-number,POST /api/validate
+2026-03-30T15:41:05,2026-03-30,200,,Success,GET /
+2026-03-30T15:41:09,2026-03-30,201,,Success,POST /api/logs
+2026-03-30T15:41:14,2026-03-30,400,3002,"Missing required fields: email, age",POST /api/validate
+2026-03-30T15:41:18,2026-03-30,400,3002,"Missing required fields: email, age",POST /api/validate
+2026-03-30T15:41:22,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T15:41:28,2026-03-30,403,2003,Permission denied - Insufficient privileges,GET /api/test-error/3
+2026-03-30T15:41:32,2026-03-30,404,4004,Endpoint not found: GET /api/nonexistent-endpoint,GET /api/nonexistent-endpoint
+2026-03-30T15:41:36,2026-03-30,408,2004,Request timeout - Operation exceeded 30 seconds,GET /api/test-error/4
+2026-03-30T15:41:40,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T15:41:52,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T15:42:04,2026-03-30,200,,Success,GET /api/status
+2026-03-30T15:42:14,2026-03-30,200,,Success,GET /api/logs
+2026-03-30T15:42:22,2026-03-30,400,3003,Invalid email format: invalid,POST /api/validate
+2026-03-30T15:42:29,2026-03-30,400,3004,Age out of valid range: -5,POST /api/validate
+2026-03-30T15:42:34,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T15:42:40,2026-03-30,503,2007,Service unavailable - Maintenance in progress,GET /api/test-error/7
+2026-03-30T15:42:51,2026-03-30,200,,Success,POST /api/validate
+2026-03-30T15:43:03,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:00:47,2026-03-30,200,,Success,GET /api/status
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,503,2001,Database connection failed,GET /api/test-error/1
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,401,2002,Authentication failed - Invalid credentials,GET /api/test-error/2
+2026-03-30T16:01:16,2026-03-30,403,2003,Permission denied - Insufficient privileges,GET /api/test-error/3
+2026-03-30T16:01:16,2026-03-30,403,2003,Permission denied - Insufficient privileges,GET /api/test-error/3
+2026-03-30T16:01:16,2026-03-30,403,2003,Permission denied - Insufficient privileges,GET /api/test-error/3
+2026-03-30T16:01:16,2026-03-30,403,2003,Permission denied - Insufficient privileges,GET /api/test-error/3
+2026-03-30T16:01:16,2026-03-30,403,2003,Permission denied - Insufficient privileges,GET /api/test-error/3
+2026-03-30T16:01:16,2026-03-30,403,2003,Permission denied - Insufficient privileges,GET /api/test-error/3
+2026-03-30T16:01:16,2026-03-30,403,2003,Permission denied - Insufficient privileges,GET /api/test-error/3
+2026-03-30T16:01:16,2026-03-30,403,2003,Permission denied - Insufficient privileges,GET /api/test-error/3
+2026-03-30T16:01:16,2026-03-30,403,2003,Permission denied - Insufficient privileges,GET /api/test-error/3
+2026-03-30T16:01:16,2026-03-30,403,2003,Permission denied - Insufficient privileges,GET /api/test-error/3
+2026-03-30T16:01:16,2026-03-30,408,2004,Request timeout - Operation exceeded 30 seconds,GET /api/test-error/4
+2026-03-30T16:01:16,2026-03-30,408,2004,Request timeout - Operation exceeded 30 seconds,GET /api/test-error/4
+2026-03-30T16:01:16,2026-03-30,408,2004,Request timeout - Operation exceeded 30 seconds,GET /api/test-error/4
+2026-03-30T16:01:16,2026-03-30,408,2004,Request timeout - Operation exceeded 30 seconds,GET /api/test-error/4
+2026-03-30T16:01:16,2026-03-30,408,2004,Request timeout - Operation exceeded 30 seconds,GET /api/test-error/4
+2026-03-30T16:01:16,2026-03-30,408,2004,Request timeout - Operation exceeded 30 seconds,GET /api/test-error/4
+2026-03-30T16:01:16,2026-03-30,408,2004,Request timeout - Operation exceeded 30 seconds,GET /api/test-error/4
+2026-03-30T16:01:16,2026-03-30,408,2004,Request timeout - Operation exceeded 30 seconds,GET /api/test-error/4
+2026-03-30T16:01:16,2026-03-30,408,2004,Request timeout - Operation exceeded 30 seconds,GET /api/test-error/4
+2026-03-30T16:01:16,2026-03-30,408,2004,Request timeout - Operation exceeded 30 seconds,GET /api/test-error/4
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,400,2005,Invalid JSON in request body,GET /api/test-error/5
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:16,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:17,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:17,2026-03-30,429,2006,Rate limit exceeded - Too many requests,GET /api/test-error/6
+2026-03-30T16:01:17,2026-03-30,503,2007,Service unavailable - Maintenance in progress,GET /api/test-error/7
+2026-03-30T16:01:17,2026-03-30,503,2007,Service unavailable - Maintenance in progress,GET /api/test-error/7
+2026-03-30T16:01:17,2026-03-30,503,2007,Service unavailable - Maintenance in progress,GET /api/test-error/7
+2026-03-30T16:01:17,2026-03-30,503,2007,Service unavailable - Maintenance in progress,GET /api/test-error/7
+2026-03-30T16:01:17,2026-03-30,503,2007,Service unavailable - Maintenance in progress,GET /api/test-error/7
+2026-03-30T16:01:17,2026-03-30,503,2007,Service unavailable - Maintenance in progress,GET /api/test-error/7
+2026-03-30T16:01:17,2026-03-30,503,2007,Service unavailable - Maintenance in progress,GET /api/test-error/7
+2026-03-30T16:01:17,2026-03-30,503,2007,Service unavailable - Maintenance in progress,GET /api/test-error/7
+2026-03-30T16:01:17,2026-03-30,503,2007,Service unavailable - Maintenance in progress,GET /api/test-error/7
+2026-03-30T16:01:17,2026-03-30,503,2007,Service unavailable - Maintenance in progress,GET /api/test-error/7
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3002,Missing required fields: age,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3003,Invalid email format: invalid-email,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3004,Age out of valid range: 200,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3004,Age out of valid range: 200,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3004,Age out of valid range: 200,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3004,Age out of valid range: 200,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3004,Age out of valid range: 200,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3004,Age out of valid range: 200,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3004,Age out of valid range: 200,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3004,Age out of valid range: 200,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3004,Age out of valid range: 200,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3004,Age out of valid range: 200,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3005,Age is not a valid integer: not-a-number,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3005,Age is not a valid integer: not-a-number,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3005,Age is not a valid integer: not-a-number,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3005,Age is not a valid integer: not-a-number,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3005,Age is not a valid integer: not-a-number,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3005,Age is not a valid integer: not-a-number,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3005,Age is not a valid integer: not-a-number,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3005,Age is not a valid integer: not-a-number,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3005,Age is not a valid integer: not-a-number,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3005,Age is not a valid integer: not-a-number,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:01:17,2026-03-30,400,3001,Request body is empty,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3002,"Missing required fields: email, age",POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3002,"Missing required fields: email, age",POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3002,"Missing required fields: email, age",POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3002,"Missing required fields: email, age",POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3002,"Missing required fields: email, age",POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3002,"Missing required fields: email, age",POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3002,"Missing required fields: email, age",POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3002,"Missing required fields: email, age",POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3003,Invalid email format: invalid,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3003,Invalid email format: invalid,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3003,Invalid email format: invalid,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3003,Invalid email format: invalid,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3003,Invalid email format: invalid,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3003,Invalid email format: invalid,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3003,Invalid email format: invalid,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3003,Invalid email format: invalid,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3003,Invalid email format: invalid,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3004,Age out of valid range: -5,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3004,Age out of valid range: -5,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3004,Age out of valid range: -5,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3004,Age out of valid range: -5,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3004,Age out of valid range: -5,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3004,Age out of valid range: -5,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3004,Age out of valid range: -5,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3004,Age out of valid range: -5,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,400,3004,Age out of valid range: -5,POST /api/validate
+2026-03-30T16:02:42,2026-03-30,404,4004,Endpoint not found: GET /api/nonexistent-endpoint,GET /api/nonexistent-endpoint
+2026-03-30T16:02:42,2026-03-30,404,4004,Endpoint not found: GET /api/nonexistent-endpoint,GET /api/nonexistent-endpoint
+2026-03-30T16:02:42,2026-03-30,404,4004,Endpoint not found: GET /api/nonexistent-endpoint,GET /api/nonexistent-endpoint
+2026-03-30T16:02:42,2026-03-30,404,4004,Endpoint not found: GET /api/nonexistent-endpoint,GET /api/nonexistent-endpoint
+2026-03-30T16:02:42,2026-03-30,404,4004,Endpoint not found: GET /api/nonexistent-endpoint,GET /api/nonexistent-endpoint
+2026-03-30T16:02:42,2026-03-30,404,4004,Endpoint not found: GET /api/nonexistent-endpoint,GET /api/nonexistent-endpoint
+2026-03-30T16:02:42,2026-03-30,404,4004,Endpoint not found: GET /api/nonexistent-endpoint,GET /api/nonexistent-endpoint
+2026-03-30T16:02:42,2026-03-30,404,4004,Endpoint not found: GET /api/nonexistent-endpoint,GET /api/nonexistent-endpoint
+2026-03-30T16:02:42,2026-03-30,404,4004,Endpoint not found: GET /api/nonexistent-endpoint,GET /api/nonexistent-endpoint
+2026-03-30T16:04:13,2026-03-30,200,,Success,GET /api/status
+2026-03-30T16:06:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:06:33,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:06:47,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:06:48,2026-03-30,404,4004,Endpoint not found: GET /favicon.ico,GET /favicon.ico
+2026-03-30T16:06:48,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:07:03,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:07:15,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:07:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:07:18,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:07:33,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:07:48,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:12:33,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:12:34,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:13:11,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:13:11,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:13:26,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:13:42,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:13:45,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:13:56,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:14:12,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:14:27,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:14:42,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:14:57,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:15:12,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:15:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:15:41,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:15:53,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:15:53,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:16:08,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:16:20,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:16:23,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:16:38,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:16:54,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:17:09,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:17:24,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:17:34,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:17:34,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:17:49,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:18:05,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:18:20,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:18:35,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:18:50,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:19:05,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:19:20,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:19:58,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:20:04,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:20:20,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:20:34,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:20:50,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:20:56,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:21:05,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:21:06,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:21:06,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:21:20,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:21:21,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:21:35,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:21:36,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:21:51,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:22:07,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:22:22,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:22:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:22:37,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:22:52,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:23:07,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:23:22,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:23:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:23:35,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:23:37,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:23:50,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:23:50,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:24:05,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:24:20,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:24:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:24:35,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:24:50,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:25:06,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:25:21,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:25:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:25:36,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:25:51,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:26:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:26:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:27:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:27:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:27:53,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:28:06,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:28:21,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:28:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:28:36,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:28:51,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:29:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:29:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:29:52,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:29:52,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:29:52,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:03,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:03,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:04,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:06,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:08,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:09,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:10,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:11,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:19,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:19,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:21,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:33,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:34,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:34,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:36,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:49,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:30:51,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:31:04,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:31:19,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:31:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:31:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:31:34,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:31:49,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:31:51,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:31:52,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:32:04,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:32:05,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:32:05,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:32:21,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:32:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:32:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:32:36,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:32:51,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:33:06,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:33:21,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:33:25,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:33:28,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:33:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:33:35,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:33:36,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:33:36,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:33:38,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:33:50,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:33:51,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:33:51,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:33:52,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:33:53,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:34:04,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:34:05,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:34:05,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:34:06,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:34:06,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:34:06,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:34:08,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:34:20,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:34:21,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:34:21,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:34:23,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:34:35,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:34:38,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:34:53,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:35:08,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:35:22,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:35:23,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:35:23,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:35:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:35:38,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:35:42,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:35:53,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:35:59,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:35:59,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:36:15,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:36:23,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:36:23,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:36:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:36:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:36:45,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:37:00,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:37:15,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:37:24,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:37:24,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:37:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:37:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:37:45,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:38:00,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:38:15,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:38:25,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:38:25,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:38:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:38:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:39:26,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:39:27,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:39:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:39:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:39:53,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:39:55,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:40:06,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:40:07,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:40:08,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:40:15,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:40:23,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:40:27,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:40:27,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:40:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:40:38,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:40:51,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:40:53,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:41:00,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:41:00,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:41:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:41:28,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:41:28,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:41:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:41:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:41:33,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:41:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:42:00,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:42:04,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:42:12,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:42:15,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:42:25,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:42:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:42:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:42:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:42:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:42:45,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:42:53,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:43:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:43:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:43:22,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:43:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:43:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:43:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:43:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:43:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:44:21,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:44:26,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:44:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:44:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:44:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:44:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:44:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:45:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:45:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:45:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:45:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:45:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:45:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:46:11,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:46:15,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:46:15,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:46:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:46:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:47:00,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:47:15,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:47:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:47:31,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:47:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:48:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:48:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:48:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:48:45,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:49:00,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:49:02,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:49:15,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:49:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:49:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:50:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:50:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:56:06,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:56:21,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:56:36,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:56:45,2026-03-30,200,,Success,GET /api/status
+2026-03-30T16:56:47,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:56:59,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:57:01,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T16:57:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:57:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:57:17,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:57:20,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T16:57:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:57:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:58:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:58:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:58:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:58:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T16:59:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:00:10,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:00:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:00:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:00:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:01:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:01:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:01:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:02:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:03:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:04:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:05:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:06:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:07:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:23:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:24:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:25:11,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:25:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:25:19,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T17:25:21,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T17:25:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:25:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:26:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:26:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:26:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:26:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:27:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:27:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:28:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:29:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:30:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:31:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:32:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:33:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:34:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:34:36,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:34:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:34:48,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T17:34:49,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T17:35:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:35:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:35:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:35:32,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T17:35:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:36:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:36:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:36:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:36:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:37:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:37:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:37:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:37:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:38:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:38:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:38:41,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:38:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:39:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:39:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:39:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:40:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:41:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:42:05,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:42:06,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:42:08,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:42:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:42:20,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:42:21,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:42:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:42:35,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:42:36,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:42:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:42:50,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:42:51,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:43:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:43:05,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:43:06,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:43:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:43:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:43:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:44:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:44:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:44:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:45:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:45:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:45:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:46:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:46:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T17:46:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:00:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:00:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:00:30,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:00:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:00:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:01:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:01:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:01:28,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:01:28,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:01:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:01:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:02:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:02:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:02:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:02:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:03:18,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:03:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:03:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:04:19,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:04:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:04:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:04:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:04:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:05:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:05:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:05:17,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:05:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:05:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:05:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:05:32,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:05:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:05:49,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:05:52,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:06:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:06:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:06:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:06:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:07:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:07:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:07:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:07:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:08:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:08:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:08:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:08:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:09:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:09:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:09:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:09:33,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:09:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:10:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:10:08,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:10:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:10:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:10:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:11:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:11:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:11:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:11:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:12:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:12:10,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:12:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:12:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:12:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:13:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:13:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:13:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:13:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:14:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:15:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:16:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:17:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:18:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:19:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:20:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:21:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:22:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:23:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:24:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:25:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:26:09,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:26:11,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:26:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:26:18,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:26:26,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:26:28,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:26:29,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:26:30,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:26:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:26:32,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:26:33,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:26:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:27:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:27:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:27:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:27:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:28:22,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:28:23,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:28:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:28:35,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:28:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:28:50,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:29:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:29:05,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:29:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:29:20,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:29:35,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:30:18,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:30:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:31:19,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:31:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:32:20,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:32:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:33:21,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:33:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:33:35,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:33:50,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:34:05,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:34:20,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:35:21,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:36:22,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:37:23,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:38:24,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:39:25,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:39:36,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:39:44,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:39:45,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:39:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:39:48,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:39:50,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:40:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:40:05,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:40:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:40:20,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:40:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:40:35,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:40:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:41:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:41:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:42:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:42:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:43:27,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:43:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:43:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:43:32,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:43:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:44:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:44:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:44:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:44:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:45:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:45:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:46:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:46:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:47:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:47:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:47:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:47:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:48:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:48:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:48:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:48:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:48:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:49:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:49:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:49:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:49:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:49:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:50:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:50:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:51:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:51:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:52:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:52:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:53:07,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:53:20,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:53:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:53:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:53:35,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:53:51,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:54:05,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:54:06,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T18:54:06,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:54:09,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:54:13,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T18:54:22,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:54:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:54:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:54:37,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:54:52,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:55:07,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:55:22,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:55:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:55:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:55:37,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:55:52,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:56:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:56:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:56:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:57:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:57:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:57:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:58:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:58:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:58:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:59:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:59:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T18:59:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:00:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:00:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:00:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:01:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:01:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:01:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:02:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:02:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:02:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:03:24,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:03:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:03:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:03:31,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:03:33,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:03:35,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:03:37,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:03:46,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:03:56,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:04:01,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:04:16,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:04:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:04:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:04:32,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:04:47,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:05:02,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:05:17,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:05:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:05:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:05:51,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:05:55,2026-03-30,200,,Success,GET /dashboard
+2026-03-30T19:05:56,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:06:11,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:06:16,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:06:25,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:06:26,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:06:26,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:06:28,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:06:29,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:06:30,2026-03-30,200,,Success,POST /api/chat-insights
+2026-03-30T19:06:30,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:06:31,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:06:32,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:06:40,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:06:41,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:06:41,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:06:42,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:06:43,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:06:56,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:06:57,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:07:11,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:07:26,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:07:41,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:07:49,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:07:56,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:08:11,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:08:26,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:08:41,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:08:56,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:09:11,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:09:15,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:09:18,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:09:18,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:09:26,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:09:41,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:09:56,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:10:11,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:10:26,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:10:26,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:10:41,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:10:56,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:11:11,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:11:26,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:11:41,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:11:56,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:12:11,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:12:26,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:12:41,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:12:56,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:13:00,2026-03-30,500,,No error description available,POST /api/chat-insights
+2026-03-30T19:13:11,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:13:26,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:13:41,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:13:56,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:13:56,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:14:04,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:14:11,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:14:26,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:14:41,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:14:52,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-30T19:14:55,2026-03-30,200,,Success,GET /api/dashboard-data
+2026-03-31T11:07:58,2026-03-31,200,,Success,GET /api/status
+2026-03-31T11:08:08,2026-03-31,200,,Success,GET /
+2026-03-31T11:08:08,2026-03-31,404,4004,Endpoint not found: GET /favicon.ico,GET /favicon.ico
+2026-03-31T11:08:40,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T11:08:40,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:08:55,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:08:57,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T11:09:10,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:09:25,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:09:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:09:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:09:30,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:09:37,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:09:40,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:09:56,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:10:11,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:10:26,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:10:41,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:11:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:12:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:13:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:14:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:33:09,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:33:10,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:33:25,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:33:40,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:33:55,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:34:11,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:34:26,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:34:41,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:34:56,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:35:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:36:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:37:21,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:37:26,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:37:41,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:37:56,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:38:11,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:38:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:39:04,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:39:06,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T11:39:10,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:39:25,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:39:41,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:39:56,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:40:11,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:40:26,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:41:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:42:11,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:42:26,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:42:41,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:42:56,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:43:11,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:43:26,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:43:41,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:43:56,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:44:11,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:44:26,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:44:41,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:45:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:46:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:48:19,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:48:26,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:48:41,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:48:56,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:49:11,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:49:26,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:49:41,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:50:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:51:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:53:46,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T11:53:46,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:54:02,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:54:17,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:54:18,2026-03-31,200,,Success,GET /api/status
+2026-03-31T11:54:20,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T11:54:31,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T11:54:32,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:54:47,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:55:02,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:55:17,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:55:30,2026-03-31,200,,Success,GET /api/status
+2026-03-31T11:55:32,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:55:38,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T11:55:47,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:56:02,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:56:13,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T11:56:13,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:56:16,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T11:56:24,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T11:56:25,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T11:56:26,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T11:56:27,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T11:56:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:56:43,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:56:58,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:57:13,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:57:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:57:43,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:58:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:58:40,2026-03-31,200,,Success,GET /api/status
+2026-03-31T11:58:51,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T11:59:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:59:36,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:59:37,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T11:59:37,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:59:46,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T11:59:52,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T11:59:56,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T12:00:07,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:00:22,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:00:37,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:00:43,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T12:00:52,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:01:08,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:01:23,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:01:37,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:01:52,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:01:53,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T12:01:57,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T12:02:07,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:02:23,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:02:38,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:02:53,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:03:08,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:03:22,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:03:31,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T12:03:37,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:03:52,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:04:07,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:04:23,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:04:38,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:04:53,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:05:07,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:05:22,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:05:37,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:05:52,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:05:55,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:06:08,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:06:12,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T12:06:22,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:06:38,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:06:52,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:07:08,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:07:23,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:07:38,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:07:52,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:08:07,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:08:09,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T12:08:09,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:08:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:08:25,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T12:08:34,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T12:08:39,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:08:54,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:08:57,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:09:09,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:09:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:09:26,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T12:09:39,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:09:55,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:10:09,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:10:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:10:39,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:10:54,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:11:01,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T12:11:09,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:11:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:11:40,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:11:55,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:12:10,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:12:25,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:13:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:14:22,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:14:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:14:39,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:14:54,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:15:09,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:15:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:15:39,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:15:55,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:16:10,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:16:25,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:16:40,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:16:43,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:16:48,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:16:55,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:17:10,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:17:25,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:17:40,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:18:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:19:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:20:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:21:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:22:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:23:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:24:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:25:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:26:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:27:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:28:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:29:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:30:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:31:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:32:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:33:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:33:40,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:33:55,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:34:10,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:34:25,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:34:40,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:42:17,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:42:18,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T12:42:18,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:42:21,2026-03-31,200,,Success,GET /api/dashboard-report.pdf
+2026-03-31T12:42:34,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:42:48,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:43:04,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:43:18,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:43:30,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T12:43:33,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:43:48,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:44:03,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:44:18,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:44:33,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:44:48,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:45:03,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:45:18,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:45:34,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:45:49,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:46:04,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:46:19,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:47:02,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:47:03,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:47:07,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T12:47:18,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:47:33,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:47:42,2026-03-31,200,,Success,GET /api/status
+2026-03-31T12:47:49,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:47:59,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T12:47:59,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:48:14,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:48:23,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:48:30,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:48:45,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:49:00,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:49:10,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:49:14,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:49:30,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:49:45,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:50:00,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:50:15,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:51:00,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:51:06,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T12:51:06,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:51:20,2026-03-31,200,,Success,POST /api/chat-insights
+2026-03-31T12:51:36,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:52:07,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:52:36,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:53:06,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:53:36,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:54:06,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:54:36,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:55:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T12:56:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:33:50,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:34:06,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:34:36,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:35:06,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:35:36,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:35:53,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T13:35:53,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:36:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:36:53,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:36:53,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T13:36:53,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:37:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:37:54,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:38:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:38:36,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T13:38:37,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:39:07,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:39:22,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T13:39:34,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T13:39:36,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:39:49,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T13:40:07,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:40:37,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:41:07,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:41:23,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T13:41:37,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:42:37,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:43:07,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-11T09:37:05,2026-03-11,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-18T02:41:09,2026-03-18,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-31T00:36:18,2026-03-31,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-29T07:38:35,2026-03-29,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-04T18:08:37,2026-03-04,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-14T14:12:58,2026-03-14,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-09T07:42:36,2026-03-09,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-01T18:23:21,2026-03-01,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-02T20:24:02,2026-03-02,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-15T13:36:18,2026-03-15,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-23T16:18:55,2026-03-23,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-12T17:34:36,2026-03-12,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-19T09:24:05,2026-03-19,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-08T07:28:58,2026-03-08,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-26T03:39:27,2026-03-26,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-19T01:44:30,2026-03-19,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-12T23:42:25,2026-03-12,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-02T20:59:30,2026-03-02,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-13T13:06:00,2026-03-13,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-29T06:49:04,2026-03-29,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-02T14:42:41,2026-03-02,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-26T15:40:36,2026-03-26,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-17T00:42:32,2026-03-17,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-25T08:44:24,2026-03-25,422,5003,Refund window expired — transaction is older than 90 days,POST /api/payments/refund
+2026-03-29T14:04:07,2026-03-29,422,5003,Refund window expired — transaction is older than 90 days,POST /api/payments/refund
+2026-03-28T01:48:25,2026-03-28,422,5003,Refund window expired — transaction is older than 90 days,POST /api/payments/refund
+2026-03-29T11:06:46,2026-03-29,422,5003,Refund window expired — transaction is older than 90 days,POST /api/payments/refund
+2026-03-11T01:35:36,2026-03-11,422,5003,Refund window expired — transaction is older than 90 days,POST /api/payments/refund
+2026-03-16T10:24:33,2026-03-16,422,5003,Refund window expired — transaction is older than 90 days,POST /api/payments/refund
+2026-03-27T17:18:52,2026-03-27,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-03T17:02:03,2026-03-03,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-21T07:19:13,2026-03-21,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-23T06:02:59,2026-03-23,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-30T02:50:53,2026-03-30,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-09T13:46:41,2026-03-09,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-19T01:39:05,2026-03-19,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-04T05:01:58,2026-03-04,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-17T12:03:29,2026-03-17,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-13T12:27:09,2026-03-13,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-08T13:24:08,2026-03-08,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-10T00:36:27,2026-03-10,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-11T20:03:49,2026-03-11,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-08T08:00:37,2026-03-08,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-23T15:35:28,2026-03-23,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-24T07:35:53,2026-03-24,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-11T02:49:56,2026-03-11,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-01T18:07:20,2026-03-01,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-13T21:02:33,2026-03-13,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-29T12:51:52,2026-03-29,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-26T04:24:29,2026-03-26,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-28T03:22:10,2026-03-28,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-10T16:02:28,2026-03-10,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-08T01:21:27,2026-03-08,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-11T02:42:52,2026-03-11,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-19T08:32:09,2026-03-19,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-29T14:10:40,2026-03-29,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-21T03:11:55,2026-03-21,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-30T10:39:30,2026-03-30,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-16T16:30:55,2026-03-16,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-10T20:11:34,2026-03-10,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-09T16:20:31,2026-03-09,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-08T20:00:30,2026-03-08,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-31T00:01:17,2026-03-31,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-16T23:41:47,2026-03-16,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-07T19:33:03,2026-03-07,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-21T01:57:15,2026-03-21,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-13T19:05:00,2026-03-13,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-07T14:25:00,2026-03-07,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-27T16:47:59,2026-03-27,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-13T01:38:43,2026-03-13,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-10T12:38:41,2026-03-10,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-08T23:48:31,2026-03-08,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-11T07:35:14,2026-03-11,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-29T13:59:47,2026-03-29,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-18T20:23:17,2026-03-18,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-17T02:39:41,2026-03-17,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-25T21:17:01,2026-03-25,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-27T04:30:13,2026-03-27,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-02T11:38:30,2026-03-02,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-05T07:43:29,2026-03-05,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-14T21:05:43,2026-03-14,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-18T02:42:47,2026-03-18,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-21T07:52:08,2026-03-21,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-02T05:08:46,2026-03-02,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-19T10:37:20,2026-03-19,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-06T10:45:43,2026-03-06,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-05T18:14:32,2026-03-05,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-02T12:15:52,2026-03-02,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-21T02:19:20,2026-03-21,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-12T15:48:40,2026-03-12,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-13T16:17:30,2026-03-13,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-23T09:21:38,2026-03-23,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-11T19:23:05,2026-03-11,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-08T10:49:45,2026-03-08,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-05T15:44:32,2026-03-05,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-07T22:36:08,2026-03-07,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-05T23:35:17,2026-03-05,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-21T09:36:06,2026-03-21,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-08T08:45:11,2026-03-08,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-18T00:11:02,2026-03-18,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-18T08:44:29,2026-03-18,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-02T11:00:44,2026-03-02,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-17T03:01:47,2026-03-17,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-31T07:35:59,2026-03-31,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-29T17:44:10,2026-03-29,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-08T01:04:49,2026-03-08,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-10T12:59:29,2026-03-10,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-21T22:35:22,2026-03-21,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-07T04:19:17,2026-03-07,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-04T07:17:13,2026-03-04,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-11T13:11:35,2026-03-11,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-11T05:02:31,2026-03-11,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-21T23:27:22,2026-03-21,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-08T13:23:22,2026-03-08,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-30T19:44:37,2026-03-30,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-29T21:49:31,2026-03-29,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-17T21:41:34,2026-03-17,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-21T06:22:21,2026-03-21,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-29T09:45:46,2026-03-29,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-11T03:34:00,2026-03-11,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-05T04:46:12,2026-03-05,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-10T22:02:18,2026-03-10,409,7003,Cannot cancel order — shipment already dispatched,DELETE /api/orders/{id}
+2026-03-30T15:28:32,2026-03-30,409,7003,Cannot cancel order — shipment already dispatched,DELETE /api/orders/{id}
+2026-03-08T15:33:13,2026-03-08,409,7003,Cannot cancel order — shipment already dispatched,DELETE /api/orders/{id}
+2026-03-11T07:08:20,2026-03-11,409,7003,Cannot cancel order — shipment already dispatched,DELETE /api/orders/{id}
+2026-03-19T01:58:17,2026-03-19,409,7003,Cannot cancel order — shipment already dispatched,DELETE /api/orders/{id}
+2026-03-08T03:18:24,2026-03-08,409,7003,Cannot cancel order — shipment already dispatched,DELETE /api/orders/{id}
+2026-03-11T05:46:12,2026-03-11,409,7003,Cannot cancel order — shipment already dispatched,DELETE /api/orders/{id}
+2026-03-03T13:46:20,2026-03-03,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-22T03:36:50,2026-03-22,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-18T19:40:44,2026-03-18,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-11T17:25:27,2026-03-11,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-30T04:35:15,2026-03-30,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-28T16:42:33,2026-03-28,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-21T00:28:54,2026-03-21,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-08T19:09:43,2026-03-08,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-28T04:57:37,2026-03-28,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-24T14:02:34,2026-03-24,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-07T19:53:42,2026-03-07,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-21T22:50:57,2026-03-21,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-04T11:39:13,2026-03-04,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-15T17:07:43,2026-03-15,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-10T13:48:52,2026-03-10,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-20T10:23:34,2026-03-20,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-21T09:54:21,2026-03-21,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-18T22:40:00,2026-03-18,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-07T19:32:46,2026-03-07,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-06T20:10:23,2026-03-06,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-18T05:44:24,2026-03-18,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-16T04:33:44,2026-03-16,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-30T22:52:15,2026-03-30,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-12T11:46:26,2026-03-12,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-13T18:30:53,2026-03-13,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-24T14:12:44,2026-03-24,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-09T14:19:26,2026-03-09,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-16T20:31:19,2026-03-16,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-03T00:01:26,2026-03-03,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-07T09:52:20,2026-03-07,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-20T17:49:23,2026-03-20,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-21T08:19:04,2026-03-21,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-21T18:47:40,2026-03-21,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-01T19:34:56,2026-03-01,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-29T22:35:23,2026-03-29,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-13T01:18:50,2026-03-13,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-03T17:58:02,2026-03-03,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-09T03:51:26,2026-03-09,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-22T00:06:42,2026-03-22,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-25T10:02:08,2026-03-25,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-11T01:08:55,2026-03-11,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-31T10:50:54,2026-03-31,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-10T11:55:07,2026-03-10,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-20T19:42:33,2026-03-20,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-27T22:29:16,2026-03-27,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-28T02:36:57,2026-03-28,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-12T00:41:36,2026-03-12,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-12T12:39:42,2026-03-12,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-24T17:32:01,2026-03-24,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-29T02:40:14,2026-03-29,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-18T18:04:43,2026-03-18,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-01T14:50:25,2026-03-01,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-03T11:02:04,2026-03-03,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-12T01:30:54,2026-03-12,502,9004,Received malformed response from downstream fulfillment provider,POST /api/fulfillment/dispatch
+2026-03-25T17:50:33,2026-03-25,502,9004,Received malformed response from downstream fulfillment provider,POST /api/fulfillment/dispatch
+2026-03-10T04:51:35,2026-03-10,502,9004,Received malformed response from downstream fulfillment provider,POST /api/fulfillment/dispatch
+2026-03-02T09:41:57,2026-03-02,502,9004,Received malformed response from downstream fulfillment provider,POST /api/fulfillment/dispatch
+2026-03-22T23:57:17,2026-03-22,502,9004,Received malformed response from downstream fulfillment provider,POST /api/fulfillment/dispatch
+2026-03-21T02:43:30,2026-03-21,400,3001,Request body is empty,POST /api/validate
+2026-03-27T10:52:34,2026-03-27,400,3001,Request body is empty,POST /api/validate
+2026-03-24T17:01:27,2026-03-24,400,3001,Request body is empty,POST /api/validate
+2026-03-07T17:56:21,2026-03-07,400,3001,Request body is empty,POST /api/validate
+2026-03-31T11:23:36,2026-03-31,400,3001,Request body is empty,POST /api/validate
+2026-03-08T10:41:42,2026-03-08,400,3001,Request body is empty,POST /api/validate
+2026-03-08T04:03:30,2026-03-08,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-18T01:45:51,2026-03-18,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-26T18:50:50,2026-03-26,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-10T19:35:31,2026-03-10,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-30T21:15:23,2026-03-30,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-27T02:52:20,2026-03-27,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-17T17:06:48,2026-03-17,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-06T06:51:55,2026-03-06,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-01T21:10:28,2026-03-01,400,3003,Invalid email format,POST /api/validate
+2026-03-07T12:40:31,2026-03-07,400,3003,Invalid email format,POST /api/validate
+2026-03-10T11:41:33,2026-03-10,400,3003,Invalid email format,POST /api/validate
+2026-03-27T15:44:06,2026-03-27,400,3003,Invalid email format,POST /api/validate
+2026-03-18T08:54:10,2026-03-18,400,3003,Invalid email format,POST /api/validate
+2026-03-31T05:15:01,2026-03-31,400,3003,Invalid email format,POST /api/validate
+2026-03-03T04:53:07,2026-03-03,400,3003,Invalid email format,POST /api/validate
+2026-03-28T15:49:18,2026-03-28,400,3003,Invalid email format,POST /api/validate
+2026-03-09T19:35:30,2026-03-09,400,3003,Invalid email format,POST /api/validate
+2026-03-15T15:53:56,2026-03-15,400,3003,Invalid email format,POST /api/validate
+2026-03-29T03:05:13,2026-03-29,400,3003,Invalid email format,POST /api/validate
+2026-03-05T01:41:11,2026-03-05,400,3005,Age is not a valid integer,POST /api/validate
+2026-03-31T13:29:07,2026-03-31,400,3005,Age is not a valid integer,POST /api/validate
+2026-03-30T07:45:37,2026-03-30,400,3005,Age is not a valid integer,POST /api/validate
+2026-03-20T08:20:51,2026-03-20,400,3005,Age is not a valid integer,POST /api/validate
+2026-03-31T13:43:09,2026-03-31,200,,Success,POST /api/simulate-traffic
+2026-03-31T13:43:37,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:43:37,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T13:43:38,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:44:08,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:44:10,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T13:44:12,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T13:44:38,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:45:08,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:45:38,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:46:08,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:46:38,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:47:08,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:48:09,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:48:23,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T13:48:23,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:48:34,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T13:48:45,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T13:48:47,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T13:48:53,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:49:05,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T13:49:07,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T13:49:14,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T13:49:19,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T13:49:23,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:49:53,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:50:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:50:53,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:51:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:51:53,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:52:11,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T13:52:11,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:52:21,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T13:52:42,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:53:12,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:53:42,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:54:12,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:54:23,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T13:54:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:54:54,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:55:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:55:54,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:56:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:56:54,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:57:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:57:40,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T13:57:40,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:57:49,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:57:59,2026-03-31,200,,Success,GET /api/dashboard-report.pdf
+2026-03-31T13:58:11,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:58:41,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:59:11,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T13:59:30,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T13:59:31,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:00:01,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:00:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:00:31,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:00:34,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T14:01:01,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:01:21,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T14:01:31,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:02:01,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:02:31,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:02:59,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T14:03:00,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:03:30,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:03:36,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T14:03:38,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T14:04:00,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:04:30,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:04:38,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:04:45,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:04:46,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:04:47,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:04:50,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:04:52,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:05:00,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:05:06,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T14:05:13,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T14:05:30,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:06:00,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:06:30,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:07:00,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:07:16,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T14:07:17,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:07:37,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:07:47,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:08:17,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:08:43,2026-03-31,200,,Success,GET /api/dashboard-report.pdf
+2026-03-31T14:08:47,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:08:55,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:09:06,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T14:09:17,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:09:47,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:10:06,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T14:10:07,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:10:19,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:10:37,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:11:07,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:11:37,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:11:50,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T14:12:06,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:12:38,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:12:52,2026-03-31,200,,Success,GET /api/dashboard-report.pdf
+2026-03-31T14:13:00,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T14:13:00,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:13:01,2026-03-31,200,,Success,GET /api/dashboard-report.pdf
+2026-03-31T14:13:30,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:14:00,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:14:30,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:15:00,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:15:30,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:15:31,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T14:15:31,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:16:03,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:16:19,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T14:16:25,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T14:16:27,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T14:16:32,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:17:02,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:17:13,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T14:17:14,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:17:44,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:18:14,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:18:44,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:19:14,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:19:35,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T14:19:35,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:20:05,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:20:23,2026-03-31,200,,Success,GET /dashboard
+2026-03-31T14:20:23,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:20:34,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T14:20:46,2026-03-31,500,,No error description available,POST /api/chat-insights
+2026-03-31T14:20:54,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:21:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:21:54,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:22:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:22:54,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:23:24,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:24:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:25:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:26:28,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:27:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:28:27,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:29:21,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-31T14:29:23,2026-03-31,200,,Success,GET /api/dashboard-data
+2026-03-03T11:10:21,2026-03-03,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-31T06:05:36,2026-03-31,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-12T17:37:11,2026-03-12,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-05T15:24:01,2026-03-05,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-31T11:26:04,2026-03-31,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-13T13:11:32,2026-03-13,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-26T05:17:51,2026-03-26,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-15T04:13:46,2026-03-15,503,5001,Payment gateway did not respond within SLA threshold,POST /api/payments/charge
+2026-03-04T13:12:36,2026-03-04,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-16T08:28:26,2026-03-16,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-13T20:41:14,2026-03-13,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-08T15:25:07,2026-03-08,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-11T10:35:34,2026-03-11,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-19T18:32:53,2026-03-19,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-07T09:59:59,2026-03-07,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-18T05:24:46,2026-03-18,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-30T04:10:42,2026-03-30,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-09T17:07:29,2026-03-09,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-29T18:46:55,2026-03-29,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-06T13:10:20,2026-03-06,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-27T15:04:55,2026-03-27,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-29T15:20:18,2026-03-29,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-28T20:06:33,2026-03-28,402,5002,Card declined by issuer — insufficient funds,POST /api/payments/charge
+2026-03-18T21:49:17,2026-03-18,422,5003,Refund window expired — transaction is older than 90 days,POST /api/payments/refund
+2026-03-14T16:16:37,2026-03-14,422,5003,Refund window expired — transaction is older than 90 days,POST /api/payments/refund
+2026-03-06T23:23:56,2026-03-06,422,5003,Refund window expired — transaction is older than 90 days,POST /api/payments/refund
+2026-03-30T15:50:43,2026-03-30,422,5003,Refund window expired — transaction is older than 90 days,POST /api/payments/refund
+2026-03-12T16:31:16,2026-03-12,422,5003,Refund window expired — transaction is older than 90 days,POST /api/payments/refund
+2026-03-09T23:58:13,2026-03-09,422,5003,Refund window expired — transaction is older than 90 days,POST /api/payments/refund
+2026-03-10T14:50:41,2026-03-10,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-25T02:37:18,2026-03-25,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-17T19:20:47,2026-03-17,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-03T06:22:52,2026-03-03,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-30T17:09:35,2026-03-30,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-02T22:38:35,2026-03-02,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-25T04:25:54,2026-03-25,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-15T22:23:15,2026-03-15,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-18T07:57:26,2026-03-18,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-27T22:06:55,2026-03-27,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-03T20:42:27,2026-03-03,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-28T18:32:14,2026-03-28,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-31T17:45:46,2026-03-31,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-04T14:29:29,2026-03-04,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-19T07:55:14,2026-03-19,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-28T18:44:15,2026-03-28,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-14T08:28:48,2026-03-14,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-08T05:59:44,2026-03-08,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-05T18:58:19,2026-03-05,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-03T21:30:56,2026-03-03,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-23T06:17:38,2026-03-23,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-09T20:27:09,2026-03-09,401,6001,Authentication failed — invalid credentials provided,POST /api/auth/token
+2026-03-22T10:46:52,2026-03-22,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-07T19:28:23,2026-03-07,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-15T16:37:27,2026-03-15,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-03T22:02:22,2026-03-03,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-16T20:25:56,2026-03-16,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-12T15:26:52,2026-03-12,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-22T06:23:29,2026-03-22,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-08T19:59:25,2026-03-08,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-07T03:12:22,2026-03-07,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-03T07:14:21,2026-03-03,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-13T00:59:15,2026-03-13,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-11T12:13:06,2026-03-11,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-08T22:56:31,2026-03-08,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-14T20:24:49,2026-03-14,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-16T01:06:49,2026-03-16,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-15T17:00:28,2026-03-15,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-22T02:19:42,2026-03-22,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-10T08:11:20,2026-03-10,401,6002,JWT refresh token has expired,POST /api/auth/refresh
+2026-03-21T02:26:17,2026-03-21,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-19T10:33:05,2026-03-19,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-24T22:39:06,2026-03-24,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-26T19:29:17,2026-03-26,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-14T08:21:31,2026-03-14,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-28T06:36:56,2026-03-28,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-17T12:25:16,2026-03-17,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-09T01:45:26,2026-03-09,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-11T13:32:38,2026-03-11,401,6003,MFA verification required but not provided,POST /api/auth/token
+2026-03-10T05:36:27,2026-03-10,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-04T08:20:42,2026-03-04,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-27T07:35:26,2026-03-27,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-27T06:30:19,2026-03-27,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-10T13:14:24,2026-03-10,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-02T05:17:50,2026-03-02,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-04T04:19:19,2026-03-04,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-26T11:56:50,2026-03-26,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-07T03:37:30,2026-03-07,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-13T13:20:59,2026-03-13,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-03T08:35:01,2026-03-03,429,6004,Account temporarily locked after 5 consecutive failed login attempts,POST /api/auth/login
+2026-03-05T18:11:05,2026-03-05,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-05T20:28:05,2026-03-05,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-11T02:10:49,2026-03-11,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-23T04:45:04,2026-03-23,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-28T18:17:23,2026-03-28,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-08T20:44:30,2026-03-08,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-14T07:14:44,2026-03-14,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-07T03:31:26,2026-03-07,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-29T10:01:47,2026-03-29,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-16T11:34:25,2026-03-16,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-13T14:42:20,2026-03-13,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-19T02:05:23,2026-03-19,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-28T06:15:06,2026-03-28,409,7001,Requested quantity exceeds available stock level,POST /api/orders
+2026-03-20T19:19:13,2026-03-20,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-13T10:30:53,2026-03-13,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-05T18:38:57,2026-03-05,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-08T18:58:57,2026-03-08,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-21T20:48:53,2026-03-21,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-08T13:36:57,2026-03-08,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-24T06:01:14,2026-03-24,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-20T16:48:13,2026-03-20,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-09T13:35:42,2026-03-09,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-16T03:33:04,2026-03-16,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-03T10:41:22,2026-03-03,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-22T05:59:15,2026-03-22,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-27T02:20:26,2026-03-27,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-09T01:50:41,2026-03-09,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-05T22:46:22,2026-03-05,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-06T05:24:19,2026-03-06,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-20T01:57:53,2026-03-20,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-24T14:01:25,2026-03-24,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-19T03:28:18,2026-03-19,404,7002,Order not found or belongs to a different account,GET /api/orders/{id}
+2026-03-03T23:09:32,2026-03-03,409,7003,Cannot cancel order — shipment already dispatched,DELETE /api/orders/{id}
+2026-03-13T14:30:30,2026-03-13,409,7003,Cannot cancel order — shipment already dispatched,DELETE /api/orders/{id}
+2026-03-30T10:22:30,2026-03-30,409,7003,Cannot cancel order — shipment already dispatched,DELETE /api/orders/{id}
+2026-03-22T13:28:22,2026-03-22,409,7003,Cannot cancel order — shipment already dispatched,DELETE /api/orders/{id}
+2026-03-31T09:35:18,2026-03-31,409,7003,Cannot cancel order — shipment already dispatched,DELETE /api/orders/{id}
+2026-03-04T22:55:02,2026-03-04,409,7003,Cannot cancel order — shipment already dispatched,DELETE /api/orders/{id}
+2026-03-13T08:09:42,2026-03-13,409,7003,Cannot cancel order — shipment already dispatched,DELETE /api/orders/{id}
+2026-03-04T07:35:04,2026-03-04,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-30T08:09:49,2026-03-30,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-23T19:03:17,2026-03-23,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-27T22:09:25,2026-03-27,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-15T04:18:27,2026-03-15,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-19T04:25:57,2026-03-19,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-17T07:28:52,2026-03-17,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-16T09:59:07,2026-03-16,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-31T16:58:47,2026-03-31,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-02T12:31:40,2026-03-02,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-03T14:56:57,2026-03-03,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-31T18:06:09,2026-03-31,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-27T02:12:12,2026-03-27,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-21T14:07:01,2026-03-21,409,8001,Registration failed — email address already registered,POST /api/users/register
+2026-03-10T12:44:40,2026-03-10,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-06T17:40:32,2026-03-06,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-02T05:00:42,2026-03-02,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-18T04:03:33,2026-03-18,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-08T22:50:24,2026-03-08,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-27T04:28:30,2026-03-27,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-09T05:04:33,2026-03-09,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-02T01:11:10,2026-03-02,422,8002,Phone number format is invalid for the specified region,PUT /api/users/profile
+2026-03-25T05:39:14,2026-03-25,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-11T18:08:05,2026-03-11,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-24T16:36:07,2026-03-24,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-23T00:33:40,2026-03-23,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-28T13:46:04,2026-03-28,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-11T10:46:25,2026-03-11,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-19T18:04:58,2026-03-19,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-11T07:06:17,2026-03-11,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-21T22:13:34,2026-03-21,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-01T23:03:15,2026-03-01,503,9001,Email delivery service is unreachable — circuit breaker open,POST /api/notifications/email
+2026-03-28T17:41:03,2026-03-28,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-12T11:15:47,2026-03-12,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-24T08:21:05,2026-03-24,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-15T08:04:48,2026-03-15,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-08T14:27:09,2026-03-08,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-26T16:50:34,2026-03-26,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-02T08:52:42,2026-03-02,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-31T16:28:16,2026-03-31,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-21T10:06:15,2026-03-21,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-15T12:42:02,2026-03-15,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-21T11:33:03,2026-03-21,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-21T21:07:40,2026-03-21,504,9002,Upstream recommendation engine timed out after 3000ms,GET /api/recommendations
+2026-03-07T10:10:28,2026-03-07,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-30T08:38:16,2026-03-30,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-09T19:13:18,2026-03-09,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-06T05:49:34,2026-03-06,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-13T12:49:54,2026-03-13,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-31T14:43:01,2026-03-31,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-25T22:45:48,2026-03-25,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-29T04:30:54,2026-03-29,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-17T10:10:25,2026-03-17,503,9003,Inventory microservice is unreachable — health check failed,POST /api/inventory/sync
+2026-03-29T20:47:15,2026-03-29,502,9004,Received malformed response from downstream fulfillment provider,POST /api/fulfillment/dispatch
+2026-03-02T10:20:29,2026-03-02,502,9004,Received malformed response from downstream fulfillment provider,POST /api/fulfillment/dispatch
+2026-03-12T13:48:43,2026-03-12,502,9004,Received malformed response from downstream fulfillment provider,POST /api/fulfillment/dispatch
+2026-03-25T10:45:08,2026-03-25,502,9004,Received malformed response from downstream fulfillment provider,POST /api/fulfillment/dispatch
+2026-03-17T03:34:34,2026-03-17,502,9004,Received malformed response from downstream fulfillment provider,POST /api/fulfillment/dispatch
+2026-03-07T17:25:25,2026-03-07,400,3001,Request body is empty,POST /api/validate
+2026-03-06T22:10:56,2026-03-06,400,3001,Request body is empty,POST /api/validate
+2026-03-12T06:05:18,2026-03-12,400,3001,Request body is empty,POST /api/validate
+2026-03-09T05:56:31,2026-03-09,400,3001,Request body is empty,POST /api/validate
+2026-03-31T05:44:24,2026-03-31,400,3001,Request body is empty,POST /api/validate
+2026-03-14T01:35:55,2026-03-14,400,3001,Request body is empty,POST /api/validate
+2026-03-23T02:17:48,2026-03-23,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-15T11:48:05,2026-03-15,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-12T04:40:37,2026-03-12,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-04T08:15:53,2026-03-04,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-02T06:41:30,2026-03-02,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-30T05:06:15,2026-03-30,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-07T17:13:34,2026-03-07,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-31T06:24:54,2026-03-31,400,3002,"Missing required fields: name, email",POST /api/validate
+2026-03-13T21:41:12,2026-03-13,400,3003,Invalid email format,POST /api/validate
+2026-03-27T15:10:26,2026-03-27,400,3003,Invalid email format,POST /api/validate
+2026-03-21T15:28:29,2026-03-21,400,3003,Invalid email format,POST /api/validate
+2026-03-08T03:15:41,2026-03-08,400,3003,Invalid email format,POST /api/validate
+2026-03-13T02:05:34,2026-03-13,400,3003,Invalid email format,POST /api/validate
+2026-03-19T15:04:41,2026-03-19,400,3003,Invalid email format,POST /api/validate
+2026-03-18T08:16:32,2026-03-18,400,3003,Invalid email format,POST /api/validate
+2026-03-28T09:10:59,2026-03-28,400,3003,Invalid email format,POST /api/validate
+2026-03-23T18:56:38,2026-03-23,400,3003,Invalid email format,POST /api/validate
+2026-03-08T14:30:31,2026-03-08,400,3003,Invalid email format,POST /api/validate
+2026-03-03T19:09:41,2026-03-03,400,3003,Invalid email format,POST /api/validate
+2026-03-06T11:45:57,2026-03-06,400,3005,Age is not a valid integer,POST /api/validate
+2026-03-11T09:29:29,2026-03-11,400,3005,Age is not a valid integer,POST /api/validate
+2026-03-03T01:29:44,2026-03-03,400,3005,Age is not a valid integer,POST /api/validate
+2026-03-14T12:27:11,2026-03-14,400,3005,Age is not a valid integer,POST /api/validate
