@@ -1,0 +1,116 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# buildspec.yml  –  CodeBuild build specification
+# Builds four Docker images, pushes them to ECR, packages the Lambda
+# deployment zip, and writes imagedefinitions-*.json files consumed by
+# CodePipeline's ECS deploy actions.
+#
+# Required CodeBuild environment variables (set in CloudFormation stack 06):
+#   AWS_DEFAULT_REGION    – e.g. us-east-1
+#   AWS_ACCOUNT_ID        – 12-digit account number
+#   ECR_APP_URI           – <account>.dkr.ecr.<region>.amazonaws.com/<env>/app
+#   ECR_PROCESSOR_URI     – …/processor
+#   ECR_DASHBOARD_URI     – …/dashboard
+#   ECR_CHATBOT_URI       – …/chatbot
+#   RAW_LOGS_BUCKET       – name of the raw-logs S3 bucket
+#   ENVIRONMENT_NAME      – e.g. log-aggregator
+# ──────────────────────────────────────────────────────────────────────────────
+
+version: 0.2
+
+env:
+  variables:
+    PYTHON_VERSION: "3.12"
+
+phases:
+  # ── Pre-build: ECR login + derive image tag ─────────────────────────────────
+  pre_build:
+    commands:
+      - echo "Logging in to Amazon ECR..."
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION |
+          docker login --username AWS --password-stdin
+          $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+      # Use short Git commit SHA as the image tag for traceability
+      - export IMAGE_TAG=${CODEBUILD_RESOLVED_SOURCE_VERSION:0:8}
+      - echo "Image tag -> $IMAGE_TAG"
+      - echo "Pre-build complete."
+
+  # ── Build: Docker images + Lambda zip ──────────────────────────────────────
+  build:
+    commands:
+      # ── 1. Flask App ────────────────────────────────────────────────────────
+      - echo "Building Flask app image..."
+      - docker build
+          -f dockerfiles/Dockerfile.app
+          -t $ECR_APP_URI:$IMAGE_TAG
+          -t $ECR_APP_URI:latest
+          .
+      # ── 2. Log Processor ────────────────────────────────────────────────────
+      - echo "Building processor image..."
+      - docker build
+          -f dockerfiles/Dockerfile.processor
+          -t $ECR_PROCESSOR_URI:$IMAGE_TAG
+          -t $ECR_PROCESSOR_URI:latest
+          .
+      # ── 3. Dashboard ────────────────────────────────────────────────────────
+      - echo "Building dashboard image..."
+      - docker build
+          -f dockerfiles/Dockerfile.dashboard
+          -t $ECR_DASHBOARD_URI:$IMAGE_TAG
+          -t $ECR_DASHBOARD_URI:latest
+          .
+      # ── 4. Chatbot ──────────────────────────────────────────────────────────
+      - echo "Building chatbot image..."
+      - docker build
+          -f dockerfiles/Dockerfile.chatbot
+          -t $ECR_CHATBOT_URI:$IMAGE_TAG
+          -t $ECR_CHATBOT_URI:latest
+          .
+      # ── 5. Lambda deployment package ────────────────────────────────────────
+      - echo "Packaging Lambda zip..."
+      - mkdir -p /tmp/lambda-pkg
+      - pip install -r Conversion/requirements.txt -t /tmp/lambda-pkg/ --quiet
+      - cp Conversion/log_parser.py        /tmp/lambda-pkg/
+      - cp Conversion/log_to_csv_service.py /tmp/lambda-pkg/
+      - cp lambda/lambda_handler.py        /tmp/lambda-pkg/
+      - cd /tmp/lambda-pkg && zip -r /tmp/log-processor.zip . && cd -
+      - aws s3 cp /tmp/log-processor.zip s3://$RAW_LOGS_BUCKET/lambda/log-processor.zip
+      - echo "Lambda package uploaded."
+
+  # ── Post-build: push images + write imagedefinitions files ─────────────────
+  post_build:
+    commands:
+      - echo "Pushing images to ECR..."
+      - docker push $ECR_APP_URI:$IMAGE_TAG
+      - docker push $ECR_APP_URI:latest
+      - docker push $ECR_PROCESSOR_URI:$IMAGE_TAG
+      - docker push $ECR_PROCESSOR_URI:latest
+      - docker push $ECR_DASHBOARD_URI:$IMAGE_TAG
+      - docker push $ECR_DASHBOARD_URI:latest
+      - docker push $ECR_CHATBOT_URI:$IMAGE_TAG
+      - docker push $ECR_CHATBOT_URI:latest
+
+      # imagedefinitions-*.json consumed by CodePipeline ECS deploy actions
+      - |
+        printf '[{"name":"app","imageUri":"%s"}]' \
+          $ECR_APP_URI:$IMAGE_TAG > imagedefinitions-app.json
+      - |
+        printf '[{"name":"dashboard","imageUri":"%s"}]' \
+          $ECR_DASHBOARD_URI:$IMAGE_TAG > imagedefinitions-dashboard.json
+      - |
+        printf '[{"name":"chatbot","imageUri":"%s"}]' \
+          $ECR_CHATBOT_URI:$IMAGE_TAG > imagedefinitions-chatbot.json
+
+      - echo "Build complete. Image tag -> $IMAGE_TAG"
+
+# Artifacts passed downstream to CodePipeline's Deploy stage
+artifacts:
+  files:
+    - imagedefinitions-app.json
+    - imagedefinitions-dashboard.json
+    - imagedefinitions-chatbot.json
+  discard-paths: yes
+
+# Cache Python pip packages and Docker layers between builds
+cache:
+  paths:
+    - "/root/.cache/pip/**/*"
