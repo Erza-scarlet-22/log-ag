@@ -1,0 +1,48 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# dockerfiles/Dockerfile.dummy-app
+# Dummy app service — serves a simple Flask app at /api/dummy-app (via ALB routing)
+# ──────────────────────────────────────────────────────────────────────────────
+
+FROM public.ecr.aws/docker/library/python:3.11-slim AS builder
+
+WORKDIR /build
+RUN apt-get update && apt-get install -y --no-install-recommends gcc libffi-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY Dummy-infra-app/requirements.txt .
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir --prefix=/install -r requirements.txt
+
+# ── Runtime image ─────────────────────────────────────────────────────────────
+FROM python:3.12-slim AS runtime
+
+RUN groupadd --gid 1001 appgroup && \
+    useradd --uid 1001 --gid appgroup --no-create-home appuser
+
+WORKDIR /app
+
+COPY --from=builder /install /usr/local
+COPY Dummy-infra-app/ ./Dummy-infra-app/
+
+RUN mkdir -p /app/Dummy-infra-app/logs && chown -R appuser:appgroup /app
+USER appuser
+
+EXPOSE 5001
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:5001/health')"
+
+ENV APP_PORT=5001 \
+    APP_HOST=0.0.0.0 \
+    FLASK_DEBUG=false \
+    LOG_LEVEL=INFO \
+    PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    SERVICE_TYPE=dummy-app
+
+CMD ["sh", "-c", \
+     "cd /app/Dummy-infra-app && gunicorn \
+        --bind 0.0.0.0:${APP_PORT} \
+        --workers 2 --threads 1 --timeout 60 \
+        --access-logfile - --error-logfile - --log-level info \
+        app:app"]
